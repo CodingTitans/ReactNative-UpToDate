@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "355521526347",
+    "project_id": "reactnative-uptodate",
+    "storage_bucket": "reactnative-uptodate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355521526347:android:0a710dd4dc10fd3131abce",
+        "android_client_info": {
+          "package_name": "com.slimshady"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355521526347-p9r5bahmb1g9n2injfcaf2gkr2dfgpk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBENxRBcwR7RsQzKuER6xUFfHxJ7vYPjoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355521526347-p9r5bahmb1g9n2injfcaf2gkr2dfgpk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
