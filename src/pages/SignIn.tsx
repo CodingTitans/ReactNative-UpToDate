@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -8,7 +8,12 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {validateUser} from '../api';
+
 const SignIn = ({navigation}: {navigation: any}) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
@@ -20,14 +25,20 @@ const SignIn = ({navigation}: {navigation: any}) => {
           style={styles.input}
           autoCapitalize="none"
           keyboardType="email-address"
+          value={username}
+          onChange={(e: any) => setUsername(e.target.value)}
         />
         <TextInput
           placeholder="Password"
           style={styles.input}
+          value={password}
+          onChange={(e: any) => setPassword(e.target.value)}
           secureTextEntry
         />
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => validateUser(username, password)}>
           <Text style={styles.buttonText}>Sign in</Text>
         </TouchableOpacity>
 
@@ -36,7 +47,7 @@ const SignIn = ({navigation}: {navigation: any}) => {
         <Text style={styles.signupText}>
           Don't have an account?{' '}
           <Text
-            onPress={() => navigation.navigate('SignUp')}
+            onPress={() => navigation.navigate('Sign Up')}
             style={styles.signupLink}>
             Sign Up
           </Text>

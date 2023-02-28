@@ -67,7 +67,7 @@ const SignUp = ({navigation}: {navigation: any}) => {
 
       <Text style={styles.accountConfimation}>
         Already Have An Account?
-        <Text onPress={() => navigation.navigate('SignIn')}> Sign in</Text>
+        <Text onPress={() => navigation.navigate('Sign In')}> Sign in</Text>
       </Text>
     </SafeAreaView>
   );

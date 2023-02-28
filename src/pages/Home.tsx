@@ -23,6 +23,8 @@ const Home = ({navigation}: {navigation: any}) => {
       const newsWithImages = response.data.news.filter(
         (article: Article) => article.image !== '',
       ); // Only keep news with non-empty image URLs
+
+      console.log(newsWithImages);
       setNews(newsWithImages as Article[]);
     });
   }, []);
